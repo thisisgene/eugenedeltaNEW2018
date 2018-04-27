@@ -40,6 +40,13 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/ajax_views\/city.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax_views\/city.html",
+		"oF": 0
+		},
 	"\/ajax_views\/city.pug": {
 		"cB": 0,
 		"cOD": 1,
@@ -48,6 +55,13 @@
 		"oAP": "\/ajax_views\/city.html",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/ajax_views\/mountain.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax_views\/mountain.html",
+		"oF": 0
 		},
 	"\/ajax_views\/mountain.pug": {
 		"cB": 0,
@@ -58,6 +72,13 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/ajax_views\/people.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax_views\/people.html",
+		"oF": 0
+		},
 	"\/ajax_views\/people.pug": {
 		"cB": 0,
 		"cOD": 1,
@@ -66,6 +87,13 @@
 		"oAP": "\/ajax_views\/people.html",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/ajax_views\/space.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/ajax_views\/space.html",
+		"oF": 0
 		},
 	"\/ajax_views\/space.pug": {
 		"cB": 0,
@@ -114,6 +142,29 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/assets\/css\/3-sections\/live.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/3-sections\/live.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/css\/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/main-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"\/assets\/css\/main.scss": {
 		"aP": 0,
@@ -172,12 +223,32 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/assets\/js\/jquery-3.2.1.min-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/jquery-3.2.1.min-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/assets\/js\/jquery-3.2.1.min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/assets\/js\/jquery-3.2.1.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/script-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/script-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -191,6 +262,13 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/build\/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/.gitignore",
+		"oF": 0
 		},
 	"\/index.html": {
 		"cB": 0,

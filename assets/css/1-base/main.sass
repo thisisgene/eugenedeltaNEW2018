@@ -5,7 +5,10 @@ html, body
   padding: 0
   font-family: Catamaran, Arial, sans-serif
   overflow: hidden
+  transition: transform 200ms ease-in-out
 
+.shake
+  animation: shake 300ms linear infinite
 
 .home-wrapper
   .back-img
@@ -15,6 +18,51 @@ html, body
     left: 0
     width: 100vw
     height: 100vh
+
+  .main-title
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #000
+    pointer-events: none
+    font-size: 6rem
+    mix-blend-mode: hard-light
+    h1
+      filter: drop-shadow(0 0px 0px rgba(gold, .5))
+      //transform: scale(1, 4)
+      line-height: 1
+      margin: 0
+
+    &.blurry
+      filter: blur(2px)
+      &-1
+        opacity: .8
+        mix-blend-mode: color-dodge
+        color: gold
+        h1
+          filter: drop-shadow(0 0px 10px rgba(red, 1))
+      &-2
+        opacity: .7
+        mix-blend-mode: difference
+        color: blue
+        h1
+          filter: drop-shadow(0 -5px 0px rgba(gold, .5))
+      &-3
+        opacity: 1
+        mix-blend-mode: color-dodge
+        color: rgba(gold, .7)
+        h1
+          filter: drop-shadow(0 0px 10px rgba(darkred, 1))
+      &-4
+        mix-blend-mode: color-burn
+        color: rgba(gold, 1)
+        h1
+          filter: drop-shadow(0 -10px 0px rgba(black, .6))
 
   .full-container
     position: fixed
@@ -57,14 +105,19 @@ html, body
         align-items: center
         //filter: blur(2px)
         cursor: pointer
+        text-align: center
+        border-left: 1px solid #444
+        border-bottom: 1px solid #444
 
         .title
           margin: 0
-          color: #888
+          color: transparent
           font-size: 4rem
           text-transform: uppercase
           pointer-events: none
           transition: all 300ms ease-in-out
+          text-align: center
+
 
 
         //&.part-1
@@ -79,7 +132,7 @@ html, body
 
         &:not(.is-selected):hover
           background: rgba(#000, .2)
-          transform: scale(1.2)
+          //transform: scale(1.2)
 
           .title
             color: #fff
@@ -91,25 +144,28 @@ html, body
 
 
         &.top-shine
-          box-shadow: 0 -20px 20px rgba($shadow-color, .7)
+
+          box-shadow: 0 -20px 20px $shadow-color
           animation: topShine 600ms ease-in-out infinite
 
         &.right-shine
-          box-shadow: 20px 0 20px rgba($shadow-color, .7)
+          box-shadow: 20px 0 20px $shadow-color
           animation: rightShine 640ms ease-in-out infinite
 
         &.bottom-shine
-          box-shadow: 0 20px 20px rgba($shadow-color, .7)
+          box-shadow: 0 20px 20px $shadow-color
           animation: bottomShine 640ms ease-in-out infinite
 
         &.left-shine
-          box-shadow: -20px 0 20px rgba($shadow-color, .7)
+          box-shadow: -20px 0 20px $shadow-color
           animation: leftShine 640ms ease-in-out infinite
 
 
         &.is-selected
           background: rgba(#000, 0)
           cursor: default
+          border: none
+
 
           &.part-1
             .title
@@ -133,53 +189,67 @@ html, body
 
 @keyframes topShine
   0%
-    box-shadow: 0 -20px 20px rgba($shadow-color, .7)
+    box-shadow: 0 -20px 20px $shadow-color
   10%
-    box-shadow: 0 -22px 17px rgba($shadow-color, .7)
+    box-shadow: 0 -22px 17px $shadow-color
   14%
-    box-shadow: 0 -18px 19px rgba($shadow-color, .7)
+    box-shadow: 0 -18px 19px $shadow-color
   25%
-    box-shadow: 0 -20px 20px rgba($shadow-color, .7)
+    box-shadow: 0 -20px 20px $shadow-color
   38%
-    box-shadow: 0 -19px 18px rgba($shadow-color, .7)
+    box-shadow: 0 -19px 18px $shadow-color
   50%
-    box-shadow: 0 -21px 20px rgba($shadow-color, .7)
+    box-shadow: 0 -21px 20px $shadow-color
 @keyframes rightShine
   0%
-    box-shadow: 20px 0 20px rgba($shadow-color, .7)
+    box-shadow: 20px 0 20px $shadow-color
   10%
-    box-shadow: 18px 0 21px rgba($shadow-color, .7)
+    box-shadow: 18px 0 21px $shadow-color
   14%
-    box-shadow: 21px 0 17px rgba($shadow-color, .7)
+    box-shadow: 21px 0 17px $shadow-color
   25%
-    box-shadow: 23px 0 20px rgba($shadow-color, .7)
+    box-shadow: 23px 0 20px $shadow-color
   38%
-    box-shadow: 18px 0 22px rgba($shadow-color, .7)
+    box-shadow: 18px 0 22px $shadow-color
   50%
-    box-shadow: 21px 0 18px rgba($shadow-color, .7)
+    box-shadow: 21px 0 18px $shadow-color
 @keyframes bottomShine
   0%
-    box-shadow: 0 20px 20px rgba($shadow-color, .7)
+    box-shadow: 0 20px 20px $shadow-color
   10%
-    box-shadow: 0 22px 17px rgba($shadow-color, .7)
+    box-shadow: 0 22px 17px $shadow-color
   14%
-    box-shadow: 0 18px 19px rgba($shadow-color, .7)
+    box-shadow: 0 18px 19px $shadow-color
   25%
-    box-shadow: 0 20px 20px rgba($shadow-color, .7)
+    box-shadow: 0 20px 20px $shadow-color
   38%
-    box-shadow: 0 19px 18px rgba($shadow-color, .7)
+    box-shadow: 0 19px 18px $shadow-color
   50%
-    box-shadow: 0 21px 20px rgba($shadow-color, .7)
+    box-shadow: 0 21px 20px $shadow-color
 @keyframes leftShine
   0%
-    box-shadow: -20px 0 20px rgba($shadow-color, .7)
+    box-shadow: -20px 0 20px $shadow-color
   10%
-    box-shadow: -18px 0 21px rgba($shadow-color, .7)
+    box-shadow: -18px 0 21px $shadow-color
   14%
-    box-shadow: -21px 0 17px rgba($shadow-color, .7)
+    box-shadow: -21px 0 17px $shadow-color
   25%
-    box-shadow: -23px 0 20px rgba($shadow-color, .7)
+    box-shadow: -23px 0 20px $shadow-color
   38%
-    box-shadow: -18px 0 22px rgba($shadow-color, .7)
+    box-shadow: -18px 0 22px $shadow-color
   50%
-    box-shadow: -21px 0 18px rgba($shadow-color, .7)
+    box-shadow: -21px 0 18px $shadow-color
+
+@keyframes shake
+  0%
+    transform: translate(0px, 0px)
+  20%
+    transform: translate(4px, 2px)
+  40%
+    transform: translate(1px, -1px)
+  60%
+    transform: translate(-2px, 4px)
+  80%
+    transform: translate(0px, -2px)
+  10%
+    transform: translate(1px, -3px)

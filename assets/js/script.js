@@ -8,6 +8,7 @@ $(document).ready(function() {
     var id = $this.attr('id');
     var $back = $('.home-container');
 
+
     if (!oneSelected) {
       switch (id) {
         case '1':
@@ -44,6 +45,9 @@ $(document).ready(function() {
         $this.addClass('is-selected');
         $('.not-hovered').addClass('go-away').removeClass('not-hovered shine top-shine right-shine bottom-shine left-shine');
         $('.full-container').html(res).addClass('is-active');
+        $('.main-title').addClass('blurry blurry-'+id);
+        $('.main-title').removeClass('shake');
+
       });
 
 
@@ -57,6 +61,7 @@ $(document).ready(function() {
     if ($this.hasClass('hovered')) {
       $this.removeClass('hovered');
       $('.part:not(.hovered)').removeClass('not-hovered shine top-shine right-shine bottom-shine left-shine');
+      $('.main-title').removeClass('shake');
 
     }
 
@@ -72,6 +77,8 @@ function returnHome() {
   $('.not-hovered').removeClass('not-hovered');
   $('.hovered').removeClass('hovered');
   $('.go-away').removeClass('go-away');
+  $('.main-title').removeClass('blurry blurry-1 blurry-2 blurry-3 blurry-4');
+
   oneSelected = false;
 
-};
+}
