@@ -13,7 +13,7 @@
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/build\/.gitignore",
+		"oAP": "\/.gitignore",
 		"oF": 0
 		},
 	"\/.idea": {
@@ -27,7 +27,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/build\/_includes\/head.html",
+		"oAP": "\/_includes\/head.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -36,7 +36,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/build\/_includes\/home.html",
+		"oAP": "\/_includes\/home.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -45,7 +45,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/build\/ajax_views\/city.html",
+		"oAP": "\/ajax_views\/city.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -54,7 +54,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/build\/ajax_views\/mountain.html",
+		"oAP": "\/ajax_views\/mountain.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -63,7 +63,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/build\/ajax_views\/people.html",
+		"oAP": "\/ajax_views\/people.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -72,7 +72,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/build\/ajax_views\/space.html",
+		"oAP": "\/ajax_views\/space.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -84,7 +84,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/assets\/css\/0-tools\/colors.css",
+		"oAP": "\/assets\/css\/0-tools\/colors.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -97,7 +97,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/assets\/css\/1-base\/main.css",
+		"oAP": "\/assets\/css\/1-base\/main.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -110,7 +110,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/assets\/css\/3-sections\/home.css",
+		"oAP": "\/assets\/css\/3-sections\/home.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -123,7 +123,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/assets\/css\/main.css",
+		"oAP": "\/assets\/css\/main.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -133,7 +133,7 @@
 		"iS": 165217,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/build\/assets\/img\/city.jpg",
+		"oAP": "\/assets\/img\/city.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -144,7 +144,7 @@
 		"iS": 80790,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/build\/assets\/img\/mountain.jpg",
+		"oAP": "\/assets\/img\/mountain.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -155,7 +155,7 @@
 		"iS": 567711,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/build\/assets\/img\/people.jpg",
+		"oAP": "\/assets\/img\/people.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -166,7 +166,7 @@
 		"iS": 1376117,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/build\/assets\/img\/space.jpg",
+		"oAP": "\/assets\/img\/space.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -177,7 +177,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/assets\/js\/jquery-3.2.1.min-min.js",
+		"oAP": "\/assets\/js\/jquery-3.2.1.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -187,22 +187,16 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/assets\/js\/script-min.js",
+		"oAP": "\/assets\/js\/script-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
-		},
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
-		"oF": 0
 		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/build\/index.html",
+		"oAP": "\/index.html",
 		"oF": 0
 		},
 	"\/index.pug": {
@@ -210,7 +204,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/build\/index.html",
+		"oAP": "\/index.html",
 		"oF": 0,
 		"oS": 0
 		}
@@ -225,7 +219,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-jake",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 546435006
+	"lastBuiltDate": 546526119
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -481,7 +475,7 @@
 	"bowerSaveDevDependencies": 0,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
-	"buildFolderActive": 1,
+	"buildFolderActive": 0,
 	"buildFolderName": "build",
 	"cleanBuild": 1,
 	"coffeeLintFlags2": {
@@ -2378,7 +2372,7 @@
 			}
 		},
 	"uglifyReservedNamesString": "$",
-	"websiteRelativeRoot": "\/build"
+	"websiteRelativeRoot": ""
 	},
 "settingsFileVersion": "3"
 }
