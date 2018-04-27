@@ -26,13 +26,12 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #000;
+  color: #333;
   pointer-events: none;
   font-size: 6rem;
-  mix-blend-mode: hard-light; }
+  mix-blend-mode: exclusion; }
   .home-wrapper .main-title h1 {
-    filter: drop-shadow(0 0px 0px rgba(255, 215, 0, 0.5));
-    line-height: 1;
+    filter: drop-shadow(0 0px 0px rgba(255, 215, 0, 0));
     margin: 0; }
   .home-wrapper .main-title.blurry {
     filter: blur(2px); }
@@ -97,8 +96,8 @@ html, body {
       align-items: center;
       cursor: pointer;
       text-align: center;
-      border-left: 1px solid #444;
-      border-bottom: 1px solid #444; }
+      border-left: 1px solid #222;
+      border-bottom: 1px solid #222; }
       .home-wrapper .home-container .part-container .part .title {
         margin: 0;
         color: transparent;
@@ -222,6 +221,37 @@ section#home {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+section#photo .return-home {
+  display: inline-block;
+  color: white;
+  position: absolute;
+  right: 5rem;
+  top: 3rem;
+  font-size: 2rem; }
+  section#photo .return-home:hover {
+    color: #aaa;
+    cursor: pointer; }
+
+section#photo .photo-container {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 3rem; }
+  section#photo .photo-container .photo {
+    margin: .4rem;
+    opacity: .7;
+    border: 1px solid white;
+    transform-origin: bottom;
+    transition: all 300ms ease-in-out; }
+    section#photo .photo-container .photo:hover {
+      opacity: 1;
+      transform: scale(2);
+      z-index: 10; }
+    section#photo .photo-container .photo img {
+      height: 12rem; }
 
 section#live .return-home {
   margin: 2rem 5rem;
