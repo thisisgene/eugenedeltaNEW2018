@@ -39,7 +39,7 @@ $(document).ready(function() {
 
     $this.on('click', function(e) {
       oneSelected = true;
-      $.get('/ajax_views/'+viewArray[id]+'.html', function(res) {
+      $.get('ajax_views/'+viewArray[id]+'.html', function(res) {
         console.log(viewArray[id]);
         $this.addClass('is-selected');
         $('.not-hovered').addClass('go-away').removeClass('not-hovered shine top-shine right-shine bottom-shine left-shine');
