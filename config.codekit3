@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26680",
 "files": {
+	"\/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/.gitignore",
+		"oF": 0
+		},
 	"\/.idea": {
 		"ft": 65536,
 		"oA": 1,
@@ -189,6 +196,13 @@
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "\/build\/build",
+		"oF": 0
+		},
+	"\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/index.html",
 		"oF": 0
 		},
 	"\/index.pug": {
